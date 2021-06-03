@@ -52,7 +52,7 @@ class DoubleExecutionPatttern:
 
     def exec(self, *argv):
         a = self.code(*argv)
-        time.sleep(1)
+        time.sleep(0.01)
         b = self.code(*argv)
 
         if a == b:
